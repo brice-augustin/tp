@@ -13,7 +13,7 @@ Malgré ces différences, vous verrez que ces ordinateurs ont suffisamment de po
 
 ![](images/contexte.png)
 
-<img src="images/contexte.png" width="100" height="100">
+<img src="images/contexte.png" width="75%">
 
 ## Maquette
 
