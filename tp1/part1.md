@@ -64,6 +64,6 @@ Ouvrez également une session sur les deux VM Debian, toujours avec les [identif
 
 Enfin, vous devez systématiquement configurer les cartes réseau de vos VM en [mode ``Accès par pont``](https://doc2-iutrt.readthedocs.io/en/latest/virtualbox.html#configurer-la-carte-reseau-d-une-vm-en-mode-acces-par-pont). 
 
-> :information: Vous étudierez le rôle de ce mode plus tard, dans un module du second semestre. Pour le moment, sachez simplement qu'il permet à la VM de communiquer librement avec tous les autres ordinateurs du réseau. 
+> :information_source: Vous étudierez le rôle de ce mode plus tard, dans un module du second semestre. Pour le moment, sachez simplement qu'il permet à la VM de communiquer librement avec tous les autres ordinateurs du réseau. 
 
 Appliquez cette configuration sur la VM ``Windows Server 2016`` et sur les deux ``Debian``, puis [redémarrez-les](https://doc2-iutrt.readthedocs.io/en/latest/linux.html#redemarrer-le-systeme) pour prendre en compte les modifications. 
