@@ -4,3 +4,21 @@ Le but de ce premier TP est de vous familiariser avec le matériel, les logiciel
 
 > :warning: Vous ferez appel à ces notions quasiment à chaque TP :
 > il est donc indispensable de les assimiler rapidement ! 
+
+## Contexte
+
+Dans ce TP, vous allez réaliser la maquette suivante. Il s'agit de votre premier *réseau local* (LAN), composé de quatre ordinateurs avec trois systèmes d'exploitation (OS) différents : ``Windows 10``, ``Windows Server 2016`` et ``Debian Linux``. 
+
+Malgré ces différences, vous verrez que ces ordinateurs ont suffisamment de points communs pour être capables de communiquer ensemble. Cerise sur le gâteau, vous pourrez également communiquer avec les ordinateurs de tous vos collègues dans la salle de TP.
+
+![](images/contexte.png)
+
+## Maquette
+
+Vous allez réaliser cette maquette *individuellement* (un étudiant par PC). Néanmoins, la salle de TP ayant un nombre de PC limité, il ne sera pas possible de réaliser une maquette entièrement physique. Pour contourner ce problème, vous allez vous appuyer sur la *virtualisation* : comme l'illustre la figure suivante, une partie des ordinateurs (``Windows Server 2016`` et les deux ``Debian Linux``) seront des *machines virtuelles* (VM).
+
+![](images/maquette.png)
+
+Pour réaliser votre maquette, utilisez de préférence un PC d'extrémité. 
+
+> :warning: N'utilisez le PC du milieu que s'il y a trois étudiants par table.
