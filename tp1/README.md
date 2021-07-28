@@ -7,7 +7,7 @@ Le but de ce premier TP est de vous familiariser avec le matériel, les logiciel
 
 ## Contexte
 
-Dans ce TP, vous allez réaliser la maquette suivante. Il s'agit de votre premier *réseau local* (LAN), composé de quatre ordinateurs avec trois systèmes d'exploitation (OS) différents : ``Windows 10``, ``Windows Server 2016`` et ``Debian Linux``. 
+Dans ce TP, vous allez réaliser la maquette suivante. Il s'agit de votre premier [réseau local* (LAN)](https://fr.wikipedia.org/wiki/R%C3%A9seau_local), composé de quatre ordinateurs avec trois systèmes d'exploitation (OS) différents : ``Windows 10``, ``Windows Server 2016`` et ``Debian Linux``. 
 
 Malgré ces différences, vous verrez que ces ordinateurs ont suffisamment de points communs pour être capables de communiquer ensemble. Cerise sur le gâteau, vous pourrez également communiquer avec les ordinateurs de tous vos collègues dans la salle de TP.
 
