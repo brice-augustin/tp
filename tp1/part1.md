@@ -74,5 +74,5 @@ Résumez en 4-6 lignes ce que vous avez fait depuis le début du TP.
 Appelez votre chargé de TP pour lui montrer vos trois VM. 
 
 <p align="center">
-	<img src="images/penseur.png">
+	<img src="images/penseur.jpg">
 </p>
