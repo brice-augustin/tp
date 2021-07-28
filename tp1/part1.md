@@ -67,3 +67,12 @@ Enfin, vous devez systématiquement configurer les cartes réseau de vos VM en [
 > :information_source: Vous étudierez le rôle de ce mode plus tard, dans un module du second semestre. Pour le moment, sachez simplement qu'il permet à la VM de communiquer librement avec tous les autres ordinateurs du réseau. 
 
 Appliquez cette configuration sur la VM ``Windows Server 2016`` et sur les deux ``Debian``, puis [redémarrez-les](https://doc2-iutrt.readthedocs.io/en/latest/linux.html#redemarrer-le-systeme) pour prendre en compte les modifications. 
+
+## Synthèse
+
+Résumez en 4-6 lignes ce que vous avez fait depuis le début du TP. 
+Appelez votre chargé de TP pour lui montrer vos trois VM. 
+
+<p align="center">
+	<img src="images/penseur.png">
+</p>
