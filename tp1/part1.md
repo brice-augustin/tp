@@ -44,3 +44,26 @@ Utilisez la même méthode pour [importer](https://doc2-iutrt.readthedocs.io/en/
 <p align="center">
 	<img src="images/virtualbox-macos-linux.jpg" width="75%">
 </p>
+
+## Ouverture de session
+
+La manipulation d’un OS virtualisé ressemble fortement à celle d’un OS installé sur un ordinateur physique, à quelques petites différences près. En effet, comme la VM partage le clavier et la souris avec l’hôte, certaines combinaisons de touches causent des conflits (par exemple, ``Ctrl-Alt-Suppr``). 
+
+Par conséquent, pour envoyer le signal ``Ctrl-Alt-Suppr`` à une VM, vous devez en réalité taper la combinaison ``Ctrl-Droite`` et ``Suppr``.
+Utilisez cette combinaison de touches pour ouvrir une session sur ``Windows Server 2016`` avec les [identifiants de l'IUT](https://doc2-iutrt.readthedocs.io/en/latest/divers.html#identifiants-de-l-iut).
+
+Vous pouvez fermer le ``Gestionnaire de serveur`` qui s'ouvre automatiquement. Vous n'en aurez pas besoin dans ce TP. 
+
+Ouvrez également une session sur les deux VM Debian, toujours avec les [identifiants de l'IUT](https://doc2-iutrt.readthedocs.io/en/latest/divers.html#identifiants-de-l-iut).
+
+<p align="center">
+	<img src="images/virtualbox-linux.jpg" width="75%">
+</p>
+
+## Mode réseau
+
+Enfin, vous devez systématiquement configurer les cartes réseau de vos VM en [mode ``Accès par pont``](https://doc2-iutrt.readthedocs.io/en/latest/virtualbox.html#configurer-la-carte-reseau-d-une-vm-en-mode-acces-par-pont). 
+
+> :information: Vous étudierez le rôle de ce mode plus tard, dans un module du second semestre. Pour le moment, sachez simplement qu'il permet à la VM de communiquer librement avec tous les autres ordinateurs du réseau. 
+
+Appliquez cette configuration sur la VM ``Windows Server 2016`` et sur les deux ``Debian``, puis [redémarrez-les](https://doc2-iutrt.readthedocs.io/en/latest/linux.html#redemarrer-le-systeme) pour prendre en compte les modifications. 
