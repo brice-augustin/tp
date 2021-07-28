@@ -57,7 +57,7 @@ Vous pouvez fermer le ``Gestionnaire de serveur`` qui s'ouvre automatiquement. V
 Ouvrez également une session sur les deux VM Debian, toujours avec les [identifiants de l'IUT](https://doc2-iutrt.readthedocs.io/en/latest/divers.html#identifiants-de-l-iut).
 
 <p align="center">
-	<img src="images/virtualbox-linux.jpg" width="75%">
+	<img src="images/virtualbox-linux.png" width="75%">
 </p>
 
 ## Mode réseau
