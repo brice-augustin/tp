@@ -8,23 +8,11 @@ Avant d'établir une communication, il faut déjà déterminer l'[adresse IP](ht
 
 Déterminez l'adresse IP des quatre ordinateurs ([Windows](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#determiner-l-adresse-ip-de-la-carte-reseau-ethernet-4), [Linux](https://doc2-iutrt.readthedocs.io/en/latest/linux.html#determiner-l-adresse-ip)) qui constituent votre réseau. Notez vos résultats dans un tableau :
 
-| Nom | Type | Adresse IP |
-| --------------------- | :----:| ----------: |
-| ``Hôte - Windows 10`` | Physique | |
-| ``VM1 - Windows Server 2016`` | Virtuel | |
-| ``VM2 - Debian Stretch (#1)`` | Virtuel | |
-| ``VM3 - Debian Stretch (#2)`` | Virtuel | |
-
-| Nom | Type | Adresse IP |
-| --------------------- | :----:| ----------: |
-| Hôte - Windows 10 | Physique | |
-
-Colons can be used to align columns.
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+Nom | Type | Adresse IP |
+--------------------- | ----| ----------
+``Hôte - Windows 10`` | Physique |
+``VM1 - Windows Server 2016`` | Virtuel |
+``VM2 - Debian Stretch (#1)`` | Virtuel |
+``VM3 - Debian Stretch (#2)`` | Virtuel |
 
 Vous remarquerez que les quatre adresses IP commencent toutes par ``172.16.110``. Par convention, à l'IUT le troisième nombre (ici ``110``) correspond au numéro de la salle de TP. Le quatrième identifie chaque équipement de manière unique, dans la salle. 
