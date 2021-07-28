@@ -70,9 +70,9 @@ Appliquez cette configuration sur la VM ``Windows Server 2016`` et sur les deux 
 
 ## Synthèse
 
+<p align="center">
+	<img src="images/penseur.jpg" width=150>
+</p>
+
 Résumez en 4-6 lignes ce que vous avez fait depuis le début du TP. 
 Appelez votre chargé de TP pour lui montrer vos trois VM. 
-
-<p align="center">
-	<img src="images/penseur.jpg" width=100>
-</p>
