@@ -34,3 +34,43 @@ De | Vers | OK/NOK
 Vérifiez ensuite que vos quatre ordinateurs (physique et virtuels) peuvent communiquer ensemble.
 
 Enfin, choisissez deux collègues dans la salle et vérifiez que vous pouvez communiquer avec leurs ordinateurs. 
+
+## Serveur Web
+
+Vous allez à présent doter votre maquette d'un premier [service réseau](https://fr.wikipedia.org/wiki/Service_r%C3%A9seau). Il s'agit d'un serveur Web, qui sera hébergé sur la VM2 (``Debian Linux``). Il servira des pages Web qui seront accessibles depuis n'importe quel autre ordinateur de la salle, *y compris ceux de vos collègues*.
+
+Pour transformer un ordinateur Debian en un serveur Web, c'est très simple : il suffit d'[installer le paquetage](https://doc2-iutrt.readthedocs.io/en/latest/linux.html#installer-le-paquetage-apache2-newbie) ``apache2`` !
+
+Testez ce service réseau depuis votre hôte ``Windows 10`` : tapez l'adresse IP de la VM2 dans la barre d'URL d'un navigateur Web (utilisez de préférence ``Firefox``). Si la page suivante s'affiche, *c'est gagné* !
+
+<p align="center">
+	<img src="images/apache2-debian-page.png" width=75%>
+</p>
+
+Personnalisez votre page d'accueil à l'aide de cette incantation magique (*que vous comprendrez mieux dans les semaines à venir*) :
+
+```bash
+	echo "Vive le BDE R&T" | sudo tee /var/www/html/index.html
+```
+
+Rafraichissez la page pour observer le résultat :
+
+<p align="center">
+	<img src="images/apache2-debian-perso.png" width=75%>
+</p>
+
+Vérifiez que le site est également accessible depuis la VM1 (``Windows Server 2016``), *et même depuis les ordinateurs de vos collègues*. 
+
+Prenez quelques minutes pour visiter les sites Web de vos collègues : *peut-être que certains seront plus créatifs que vous concernant le contenu !*
+
+## Synthèse
+
+<p align="center">
+	<img src="images/penseur.jpg" width=150>
+</p>
+
+Résumez en 4-6 lignes ce que vous avez fait depuis la dernière synthèse. 
+
+Appelez votre chargé de TP pour lui montrer que vous pouvez :
+- Communiquer avec tous vos ordinateurs et même avec ceux de vos voisins
+- Visiter votre site Web ... et ceux de vos voisins
