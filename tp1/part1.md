@@ -42,5 +42,5 @@ Laissez cette VM de côté pour le moment, *mais ne l'arrêtez pas* : vous l'uti
 Utilisez la même méthode pour [importer](https://doc2-iutrt.readthedocs.io/en/latest/virtualbox.html#importer-une-vm) deux VM ``Debian Stretch``, [changer leur adresse MAC](https://doc2-iutrt.readthedocs.io/en/latest/virtualbox.html#changer-l-adresse-mac-d-une-vm) et les démarrer.
 
 <p align="center">
-	<img src="images/virtualbox-macos-linux.png" width="75%">
+	<img src="images/virtualbox-macos-linux.jpg" width="75%">
 </p>
