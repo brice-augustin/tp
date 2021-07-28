@@ -27,3 +27,7 @@ Vous allez réaliser cette maquette *individuellement* (un étudiant par PC). N�
 Pour réaliser votre maquette, utilisez de préférence un PC d'extrémité. 
 
 > :warning: N'utilisez le PC du milieu que s'il y a trois étudiants par table.
+
+## Sommaire
+
+[Environnement de travail](part1.md)
