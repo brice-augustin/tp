@@ -11,8 +11,6 @@ Dans ce TP, vous allez réaliser la maquette suivante. Il s'agit de votre premie
 
 Malgré ces différences, vous verrez que ces ordinateurs ont suffisamment de points communs pour être capables de communiquer ensemble. Cerise sur le gâteau, vous pourrez également communiquer avec les ordinateurs de tous vos collègues dans la salle de TP.
 
-![](images/contexte.png)
-
 <p align="center">
 	<img src="images/contexte.png" width="75%">
 </p>
@@ -21,7 +19,10 @@ Malgré ces différences, vous verrez que ces ordinateurs ont suffisamment de po
 
 Vous allez réaliser cette maquette *individuellement* (un étudiant par PC). Néanmoins, la salle de TP ayant un nombre de PC limité, il ne sera pas possible de réaliser une maquette entièrement physique. Pour contourner ce problème, vous allez vous appuyer sur la *virtualisation* : comme l'illustre la figure suivante, une partie des ordinateurs (``Windows Server 2016`` et les deux ``Debian Linux``) seront des *machines virtuelles* (VM).
 
-![](images/maquette.png)
+<p align="center">
+	<img src="images/maquette.png" width="75%">
+</p>
+
 
 Pour réaliser votre maquette, utilisez de préférence un PC d'extrémité. 
 
