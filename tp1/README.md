@@ -31,3 +31,6 @@ Pour réaliser votre maquette, utilisez de préférence un PC d'extrémité.
 ## Sommaire
 
 [Environnement de travail](part1.md)
+
+[Découverte de l'administration système et réseau](part2.md)
+
