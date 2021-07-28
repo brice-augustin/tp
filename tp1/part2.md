@@ -9,11 +9,15 @@ Avant d'établir une communication, il faut déjà déterminer l'[adresse IP](ht
 Déterminez l'adresse IP des quatre ordinateurs ([Windows](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#determiner-l-adresse-ip-de-la-carte-reseau-ethernet-4), [Linux](https://doc2-iutrt.readthedocs.io/en/latest/linux.html#determiner-l-adresse-ip)) qui constituent votre réseau. Notez vos résultats dans un tableau :
 
 | Nom | Type | Adresse IP |
-| --- | :---- :| ----------: |
+| --------------------- | :---- :| ----------: |
 | ``Hôte - Windows 10`` | Physique | |
 | ``VM1 - Windows Server 2016`` | Virtuel | |
 | ``VM2 - Debian Stretch (#1)`` | Virtuel | |
 | ``VM3 - Debian Stretch (#2)`` | Virtuel | |
+
+| Nom | Type | Adresse IP |
+| --------------------- | :---- :| ----------: |
+| Hôte - Windows 10 | Physique | |
 
 Colons can be used to align columns.
 
