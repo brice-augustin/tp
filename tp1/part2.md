@@ -10,6 +10,7 @@ Déterminez l'adresse IP des quatre ordinateurs ([Windows](https://doc2-iutrt.re
 
 Nom | Type | Adresse IP |
 --------------------- | ----| ----------
+``PC Exemple`` | Physique | ``172.16.110.42/24``
 ``Hôte - Windows 10`` | Physique |
 ``VM1 - Windows Server 2016`` | Virtuel |
 ``VM2 - Debian Stretch (#1)`` | Virtuel |
