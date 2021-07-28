@@ -44,7 +44,7 @@ Pour transformer un ordinateur Debian en un serveur Web, c'est très simple : il
 Testez ce service réseau depuis votre hôte ``Windows 10`` : tapez l'adresse IP de la VM2 dans la barre d'URL d'un navigateur Web (utilisez de préférence ``Firefox``). Si la page suivante s'affiche, *c'est gagné* !
 
 <p align="center">
-	<img src="images/apache2-debian-page.png" width=75%>
+	<img src="images/apache2-debian-page.png" width=60%>
 </p>
 
 Personnalisez votre page d'accueil à l'aide de cette incantation magique (*que vous comprendrez mieux dans les semaines à venir*) :
@@ -56,7 +56,7 @@ Personnalisez votre page d'accueil à l'aide de cette incantation magique (*que 
 Rafraichissez la page pour observer le résultat :
 
 <p align="center">
-	<img src="images/apache2-debian-perso.png" width=75%>
+	<img src="images/apache2-debian-perso.png">
 </p>
 
 Vérifiez que le site est également accessible depuis la VM1 (``Windows Server 2016``), *et même depuis les ordinateurs de vos collègues*. 
