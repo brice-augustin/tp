@@ -13,6 +13,8 @@ Malgré ces différences, vous verrez que ces ordinateurs ont suffisamment de po
 
 ![](images/contexte.png)
 
+<img src="images/contexte.png" width="100" height="100">
+
 ## Maquette
 
 Vous allez réaliser cette maquette *individuellement* (un étudiant par PC). Néanmoins, la salle de TP ayant un nombre de PC limité, il ne sera pas possible de réaliser une maquette entièrement physique. Pour contourner ce problème, vous allez vous appuyer sur la *virtualisation* : comme l'illustre la figure suivante, une partie des ordinateurs (``Windows Server 2016`` et les deux ``Debian Linux``) seront des *machines virtuelles* (VM).
