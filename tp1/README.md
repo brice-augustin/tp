@@ -34,3 +34,4 @@ Pour réaliser votre maquette, utilisez de préférence un PC d'extrémité.
 
 [Découverte de l'administration système et réseau](part2.md)
 
+[Un petit défi](part3.md)
