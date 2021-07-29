@@ -74,3 +74,5 @@ Résumez en 4-6 lignes ce que vous avez fait depuis la dernière synthèse.
 Appelez votre chargé de TP pour lui montrer que vous pouvez :
 - Communiquer avec tous vos ordinateurs et même avec ceux de vos voisins
 - Visiter votre site Web ... et ceux de vos voisins
+
+[Partie suivante](part3.md)

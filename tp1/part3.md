@@ -67,3 +67,5 @@ Appelez votre chargé de TP pour lui montrer le résultat de vos pings et l'acc�
 
 - Pourquoi certains ordinateurs n'ont pas d'adresse IP commençant par ``172.16.110``
 - Pourquoi certains ordinateurs ne peuvent pas communiquer avec les autres, et n'ont pas d'accès à internet
+
+[Terminé](README.md)
