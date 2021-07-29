@@ -7,7 +7,7 @@ Dans cette partie, vous allez collaborer avec vos voisins installés sur le mêm
 Utilisez toutes vos connaissances en câblage, virtualisation et administration système pour réaliser la maquette suivante. 
 
 <p align="center">
-	<img src="images/defi.png">
+	<img src="images/defi.png" width=75%>
 </p>
 
 Vous devez porter une attention toute particulière aux détails suivants :
