@@ -4,7 +4,7 @@ L'objectif de ce TP est d'apprendre à gérer un PC sous ``Windows 10`` : vérif
 
 > :warning: A partir de cette séance de TP, vous allez travailler en binôme. Vous ne rendrez qu’un CR par table. Il doit être déposé sur Eprel au format PDF. Il est impératif de déposer votre CR à l’heure, c’est à dire avant la fin du TP.
 
-## Contexte
+## <a name="contexte"></a> Contexte
 
 Vous êtes chargé concevoir le [système d'information](https://fr.wikipedia.org/wiki/Syst%C3%A8me_d%27information) (SI) d'une petite entreprise constituée de trois employés. 
 
