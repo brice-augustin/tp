@@ -13,7 +13,7 @@ Ces utilisateurs travaillent chacun sur leur PC :
 - ``Pinkman`` appartient à l'équipe de ``R&D``. Il utilise ``PC1``. 
 - ``White`` et ``Gus`` font partie de l'équipe des ``Admins``. Ils travaillent sur ``PC2`` et ``PC3``, respectivement. 
 
-<a name="contexte"></a>
+<a name="fig-contexte"></a>
 
 <p align="center">
 	<img src="images/contexte.png" width="75%">
@@ -131,6 +131,6 @@ Sur PC1, essayez d'[afficher ce dossier](https://doc2-iutrt.readthedocs.io/en/la
 
 Pour comprendre la raison de ce refus, [inspectez les droits des utilisateurs](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#inspecter-les-droits-d-un-dossier-partage) sur le dossier ``Cuisine`` de PC2. Vous allez remarquer que l'utilisateur ``Pinkman`` n'a aucun droit sur ce dossier partagé, et pour cause ... *cet utilisateur n'existe même pas sur PC2 !*
 
-Vous devez donc [créer cet utilisateur](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#creer-un-utilisateur) sur PC2, puis [configurer les autorisations d'accès](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#configurer-les-autorisations-d-acces-a-un-dossier-partage) sur le dossier partagé. *Accordez seulement le droit de lecture*, comme indiqué sur la [figure](#contexte). 
+Vous devez donc [créer cet utilisateur](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#creer-un-utilisateur) sur PC2, puis [configurer les autorisations d'accès](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#configurer-les-autorisations-d-acces-a-un-dossier-partage) sur le dossier partagé. *Accordez seulement le droit de lecture*, comme indiqué sur la [figure](#fig-contexte). 
 
 Sur PC1, réaffichez ensuite le dossier partagé, et vérifiez que, cette fois, vous pouvez afficher le contenu des fichiers qu'il contient. 
