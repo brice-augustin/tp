@@ -45,6 +45,57 @@ Sur une feuille A4, dessinez un schéma de votre maquette en faisant apparaitre 
 - Le câblage interconnectant ces ordinateurs
 - L'OS utilisé sur chaque PC et VM
 
-## Sommaire
+# Configuration réseau
 
-[Configuration réseau](part1.md)
+Ouvrez un navigateur Web sur les trois PC et vérifiez que vous avez accès à internet. 
+
+[Affichez les cartes réseau disponibles](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#afficher-les-cartes-reseau) sur les trois PC et déterminez le nom de la carte utilisée. Soyez particulièrement attentifs à PC2, qui possède *plusieurs cartes réseau*. 
+
+Déterminez l'adresse IP des quatre ordinateurs ([Windows](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#determiner-l-adresse-ip-de-la-carte-reseau-ethernet-4), [Linux](https://doc2-iutrt.readthedocs.io/en/latest/linux.html#determiner-l-adresse-ip)) et vérifiez qu'ils peuvent communiquer ensemble. 
+
+Notez vos résultats dans un tableau :
+
+PC | Nom de la carte | Adresse IP
+--------------------- | ----| ----------
+``PC Exemple`` | ``Ethernet 4`` | ``198.51.100.42/16``
+``PC1`` |  |
+``PC2`` |  |
+``PC3`` |  |
+``VM1`` |  |
+
+# Partage de fichiers
+
+Revenons à nos trois employés (Voir [Contexte](README.md#contexte)). 
+Supposons que ces utilisateurs aient besoin de s'échanger des fichiers régulièrement, en respectant une politique de confidentialité très stricte : chaque fichier doit être accessible à certains, mais pas à d'autres. 
+
+Cette politique de confidentialité impose les règles suivantes : ``Pinkman`` doit avoir accès à certains fichiers de ``White`` sans pouvoir les modifier, tandis que ``White`` peut modifier librement certains fichiers de ``Gus``. 
+
+Dans ce cas, une solution simple consiste à mettre en place un ensemble de dossiers partagés en réseau. 
+
+## Notion de dossier partagé
+
+Vous décidez d'organiser vos dossiers partagés de la façon suivante :
+
+- Le dossier ``Cuisine`` (sur ``PC2``, en vert sur la figure) sera accessible en lecture seule (``ro``) par ``Pinkman`` et en lecture-écriture (``rw``) par ``Gus``
+- Le dossier ``Mexique`` (sur ``PC3``, en bleu) sera accessible en lecture-écriture (``rw``) par ``White``
+
+Pour comprendre le fonctionnement d'un dossier partagé, intéressons-nous au partage du dossier ``Cuisine``. Comme l'illustre la figure suivante, ce partage va permettre à ``Pinkman`` (depuis ``PC1``) d'accéder à *une partie* (et non pas la totalité) des fichiers de ``White`` sur ``PC2``. 
+
+<p align="center">
+	<img src="images/partage.png" width="75%">
+</p>
+
+Voyons maintenant comment configurer cela. Dans un premier temps, vous allez configurer le dossier ``Cuisine``. Vous vous occuperez du dossier ``Mexique`` un peu plus tard.
+
+## Synthèse 1
+
+<p align="center">
+	<img src="images/penseur.jpg" width=150>
+</p>
+
+Résumez en 4-6 lignes ce que vous avez fait depuis le début de la séance. 
+
+Appelez votre chargé de TP pour lui montrer que vos ordinateurs ont accès à internet. Expliquez-lui également le principe d'un dossier partagé.  
+
+## Activation du partage de fichiers
+
