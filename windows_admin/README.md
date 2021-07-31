@@ -134,3 +134,9 @@ Pour comprendre la raison de ce refus, [inspectez les droits des utilisateurs](h
 Vous devez donc [créer cet utilisateur](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#creer-un-utilisateur) sur PC2, puis [configurer les autorisations d'accès](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#configurer-les-autorisations-d-acces-a-un-dossier-partage) sur le dossier partagé. *Accordez seulement le droit de lecture*, comme indiqué sur la [figure](#fig-contexte). 
 
 Sur PC1, réaffichez ensuite le dossier partagé, et vérifiez que, cette fois, vous pouvez afficher le contenu des fichiers qu'il contient. 
+
+## Autres dossiers partagés
+
+Complétez votre maquette en ajoutant le dossier partagé ``Mexique`` : d'après la [figure](#fig-contexte), celui-ci doit être hébergé sur le PC de ``Gus`` et son contenu peut être affiché (et modifié !) par ``White``. En revanche, ``Pinkman`` ne peut pas y avoir accès, pas même en lecture seule. 
+
+> :icecream: veillez aux autorisations de ``White`` sur le dossier ``Mexique`` ...
