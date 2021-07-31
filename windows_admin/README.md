@@ -4,7 +4,7 @@ L'objectif de ce TP est d'apprendre à gérer un PC sous ``Windows 10`` : vérif
 
 > :warning: A partir de cette séance de TP, vous allez travailler en binôme. Vous ne rendrez qu’un CR par table. Il doit être déposé sur Eprel au format PDF. Il est impératif de déposer votre CR à l’heure, c’est à dire avant la fin du TP.
 
-## <a name="contexte"></a> Contexte
+## Contexte
 
 Vous êtes chargé concevoir le [système d'information](https://fr.wikipedia.org/wiki/Syst%C3%A8me_d%27information) (SI) d'une petite entreprise constituée de trois employés. 
 
@@ -12,6 +12,8 @@ Ces utilisateurs travaillent chacun sur leur PC :
 
 - ``Pinkman`` appartient à l'équipe de ``R&D``. Il utilise ``PC1``. 
 - ``White`` et ``Gus`` font partie de l'équipe des ``Admins``. Ils travaillent sur ``PC2`` et ``PC3``, respectivement. 
+
+<a name="contexte"></a>
 
 <p align="center">
 	<img src="images/contexte.png" width="75%">
@@ -65,7 +67,7 @@ PC | Nom de la carte | Adresse IP
 
 # Partage de fichiers
 
-Revenons à nos trois employés (Voir [Contexte](README.md#contexte)). 
+Revenons à nos trois employés (Voir [Contexte](#contexte)). 
 Supposons que ces utilisateurs aient besoin de s'échanger des fichiers régulièrement, en respectant une politique de confidentialité très stricte : chaque fichier doit être accessible à certains, mais pas à d'autres. 
 
 Cette politique de confidentialité impose les règles suivantes : ``Pinkman`` doit avoir accès à certains fichiers de ``White`` sans pouvoir les modifier, tandis que ``White`` peut modifier librement certains fichiers de ``Gus``. 
@@ -99,3 +101,36 @@ Appelez votre chargé de TP pour lui montrer que vos ordinateurs ont accès à i
 
 ## Activation du partage de fichiers
 
+Par défaut, le partage de fichiers est *désactivé* sur tous les postes de travail. 
+
+Vous devez donc activer cette fonctionnalité sur PC1 et PC2 :
+
+- [Changer le profil réseau](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#changer-le-profil-reseau-de-la-connexion) en ``Réseau privé``
+- [Autoriser le partage de fichiers](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#autoriser-le-partage-de-fichiers)
+
+## Création des utilisateurs
+
+Dans un second temps, [créez les utilisateurs](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#creer-un-utilisateur) suivants sur PC1 et PC2 :
+
+Utilisateur | A créer sur :
+----------- | -------------- 
+``Pinkman`` | ``PC1``
+``White`` | ``PC2``
+
+[Fermez la session](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#fermer-la-session) ``etudiant`` sur PC1 et ouvrez une session avec votre utilisateur ``Pinkman``. 
+
+Faites de même sur PC2 : ouvrez une session avec l'utilisateur ``White``. 
+
+## Création d'un dossier partagé
+
+A présent, créez un dossier ``C:\Cuisine`` sur PC2. Dans ce dossier, créez quelques dossiers et fichiers texte contenant quelques lignes. 
+
+Ensuite, [partagez ce dossier](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#partager-le-dossier-c-films-present-sur-pc2) sur le réseau. Le dossier est à présent accessible depuis les autres PC du réseau ... *à condition d'avoir les bonnes autorisations !*
+
+Sur PC1, essayez d'[afficher ce dossier](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#afficher-un-dossier-partage) partagé. Il vous sera demandé d'entrer vos identifiants de connexion : entrez ceux de ``Pinkman``. Néanmoins, l'accès est refusé. 
+
+Pour comprendre la raison de ce refus, [inspectez les droits des utilisateurs](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#inspecter-les-droits-d-un-dossier-partage) sur le dossier ``Cuisine`` de PC2. Vous allez remarquer que l'utilisateur ``Pinkman`` n'a aucun droit sur ce dossier partagé, et pour cause ... *cet utilisateur n'existe même pas sur PC2 !*
+
+Vous devez donc [créer cet utilisateur](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#creer-un-utilisateur) sur PC2, puis [configurer les autorisations d'accès](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#configurer-les-autorisations-d-acces-a-un-dossier-partage) sur le dossier partagé. *Accordez seulement le droit de lecture*, comme indiqué sur la [figure](#contexte). 
+
+Sur PC1, réaffichez ensuite le dossier partagé, et vérifiez que, cette fois, vous pouvez afficher le contenu des fichiers qu'il contient. 
