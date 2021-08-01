@@ -137,6 +137,70 @@ Sur PC1, réaffichez ensuite le dossier partagé, et vérifiez que, cette fois, 
 
 ## Autres dossiers partagés
 
-Complétez votre maquette en ajoutant le dossier partagé ``Mexique`` : d'après la [figure](#fig-contexte), celui-ci doit être hébergé sur le PC de ``Gus`` et son contenu peut être affiché (et modifié !) par ``White``. En revanche, ``Pinkman`` ne peut pas y avoir accès, pas même en lecture seule. 
+Complétez votre maquette en accord avec la [figure](#fig-contexte) : le dossier partagé ``Mexique`` doit être hébergé sur le PC de ``Gus`` et son contenu peut être affiché (et modifié !) par ``White``. De plus, ``Gus`` doit avoir accès en lecture-écriture au dossier ``Cuisine``.
 
 > :icecream: veillez aux autorisations de ``White`` sur le dossier ``Mexique`` ...
+
+Quand vous aurez terminé la configuration, réalisez les tests suivants pour vous assurer que le cahier des charges est bien respecté :
+
+Test | Succès ?
+----------- | -------------- 
+``Pinkman`` affiche ``Cuisine`` | Oui
+``Pinkman`` modifie ``Cuisine`` |
+``Pinkman`` affiche ``Mexique`` |
+``White`` affiche ``Mexique`` |
+``White`` modifie ``Mexique`` |
+``Gus`` affiche ``Cuisine`` |
+``Gus`` modifie ``Cuisine`` |
+
+## Synthèse 2
+
+<p align="center">
+	<img src="images/penseur.jpg" width=150>
+</p>
+
+Résumez en 4-6 lignes ce que vous avez fait depuis la dernière synthèse. 
+
+Appelez votre chargé de TP pour lui montrer que :
+
+- ``Pinkman`` peut lire les fichiers dans ``Cuisine``, mais pas dans ``Mexique``
+- ``White`` peut écrire dans ``Mexique``
+- ``Gus`` peut écrire dans ``Cuisine``
+
+## Lecteur réseau
+
+On souhaite maintenant faciliter le travail de ``Pinkman`` en créant un *lecteur réseau* sur son PC. 
+Un lecteur réseau est un disque *virtuel* qui apparait aux côtés des disques durs locaux (par exemple, ``C:``) dans l'``Explorateur Windows``. Mais ce disque a une particularité, illustrée par la figure suivante : il est lié à un *dossier partagé en réseau*. 
+En d'autres termes, quand ``Pinkman`` affichera le contenu de ce lecteur (ici ``Z:``), il affichera le contenu du dossier ``Cuisine`` qui se trouve sur un autre ordinateur. 
+
+<p align="center">
+	<img src="images/mappage-lecteur.png" width="75%">
+</p>
+
+Sur PC1, ouvrez une session avec ``Pinkman``. [Créez un lecteur réseau](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#creer-un-lecteur-reseau-l) utilisant la lettre ``Z`` et lié au dossier ``Cuisine`` de PC2. 
+
+Vérifiez que ce nouveau lecteur (``Z``) est apparu dans l’``Explorateur Windows`` de ``Pinkman`` sur PC1, et que ce lecteur est bien lié au dossier partagé de PC2 : en explorant ce lecteur, le contenu du dossier ``Cuisine`` doit apparaitre, comme dans la figure précédente. 
+
+[Fermez votre session](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#fermer-la-session) puis rouvrez-la, et vérifiez que le lecteur est toujours présent. 
+
+Terminez votre configuration des partages réseau en créant, sur le PC de ``White``, un lecteur (``G``) lié au dossier ``Mexique`` de PC3. 
+
+## Stockage cloud
+
+Enfin, vous allez mettre à disposition de ``Pinkman`` un second espace de stockage réseau. Comme indiqué dans le [contexte](#fig-contexte), il s'agit d'un espace de stockage dans le *cloud* de ``Microsoft``, nommé ``OneDrive``. 
+
+Sur PC1, ouvrez une session en tant que ``Pinkman`` (si ce n'est pas déjà le cas) et [connectez-vous à votre compte ``OneDrive``](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#se-connecter-a-un-compte-onedrive). 
+
+*L'inconvénient majeur du stockage cloud est qu'il ne fonctionne plus sans connexion à internet ...*
+
+> :warning: A la fin du TP, n'oubliez pas de vous [déconnecter de OneDrive](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#se-deconnecter-de-onedrive)pour empêcher quiconque d’accéder à vos fichiers depuis ce PC. 
+
+## Synthèse 3
+
+<p align="center">
+	<img src="images/penseur.jpg" width=150>
+</p>
+
+Résumez en 4-6 lignes ce que vous avez fait depuis le début du TP. 
+
+Appelez votre chargé de TP pour lui montrer tous les espaces de stockage que vous avez créés pour ``Pinkman``. 
