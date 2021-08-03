@@ -58,6 +58,8 @@ Ces paramètres sont au nombre de trois :
 
 Dans cette partie, vous allez inspecter tous les éléments impliqués dans une connexion à internet. Ils sont représentés sur la figure suivante.
 
+<a name="fig-connexion-internet"></a>
+
 <p align="center">
 	<img src="images/connexion-internet.png" width="75%">
 </p>
@@ -67,3 +69,60 @@ Dans cette partie, vous allez inspecter tous les éléments impliqués dans une 
 [Affichez les cartes réseau](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#afficher-les-cartes-reseau) de PC1 puis [déterminez son adresse IP](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#determiner-l-adresse-ip-de-la-carte-reseau-ethernet-4). Faites de même sur PC3.
 
 Échangez vos résultats avec vos voisins et remplissez le tableau suivant :
+
+PC | Nom de la carte | Adresse IP | Masque
+------- | --------| ---------- | -----
+``PC Exemple`` | ``Ethernet 4`` | ``198.51.100.42`` | ``255.255.0.0``
+``PC1`` |  |  |
+``PC3`` |  |  |
+``PC1 voisin`` |  |  |
+``PC3 voisin`` |  |  |
+``PC fantôme`` | Néant | 172.16.110.3 | 255.255.255.0
+
+Depuis PC1, [lancez un ping](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#lancer-un-ping-vers-l-adresse-ip-8-8-8-8) vers PC3, puis vers les PC de vos voisins pour confirmer qu'ils peuvent communiquer ensemble. 
+Enfin, [lancez un ping](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#lancer-un-ping-vers-l-adresse-ip-8-8-8-8) vers une adresse IP non attribuée (*PC fantôme*) pour observer un échec de ping. 
+
+### Passerelle par défaut
+
+[Affichez l'adresse de la passerelle par défaut](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#afficher-l-adresse-de-la-passerelle-par-defaut) de PC1 et PC3. Échangez cette information avec vos voisins et [lancez un ping](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#lancer-un-ping-vers-l-adresse-ip-8-8-8-8) vers cette adresse. 
+
+*Notez cette information car vous en aurez besoin plus tard.*
+
+Paramètre | Valeur
+----- | -----
+Passerelle de PC1 |
+Passerelle de PC3 |
+Passerelle de PC1 *voisin* |
+Passerelle de PC3 *voisin* |
+
+> :information_source: Comment un PC utilise-t-il la passerelle pour communiquer avec l'extérieur ? C'est une des nombreuses questions auxquelles nous répondrons ... plus tard !
+
+### Serveur DNS
+
+[Affichez l'adresse IP du serveur DNS](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#afficher-l-adresse-du-serveur-dns) de vos deux PC et [lancez un ping](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#lancer-un-ping-vers-l-adresse-ip-8-8-8-8) vers cette adresse. 
+
+*Notez cette information car vous en aurez besoin plus tard.*
+
+Paramètre | Valeur
+----- | -----
+Serveur DNS de PC1 |
+Serveur DNS de PC3 |
+Serveur DNS de PC1 *voisin* |
+Serveur DNS de PC3 *voisin* |
+
+[Résolvez les noms de domaine](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#resoudre-le-nom-de-domaine-www-perdu-com) suivants :
+
+- ``www.perdu.com``
+- ``www.google.com``
+- ``www.purepeople.com``
+
+Enfin, vérifiez que vous pouvez [lancer un ping](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#lancer-un-ping-vers-l-adresse-ip-8-8-8-8) vers tous ces serveurs. 
+
+## Synthèse 1
+
+<p align="center">
+	<img src="images/penseur.jpg" width=150>
+</p>
+
+Résumez en 4-6 lignes vos observations sur l'architecture de votre réseau. Appuyez-vous sur les adresses IP que vous venez de noter (architecture logique) ainsi que sur l'[architecture physique](#fig-connexion-internet)).
+Appelez votre chargé de TP pour lui montrer la configuration IP de vos PC. Montrez également qu'ils peuvent se pinger.
