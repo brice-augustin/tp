@@ -125,4 +125,5 @@ Enfin, vérifiez que vous pouvez [lancer un ping](https://doc2-iutrt.readthedocs
 </p>
 
 Résumez en 4-6 lignes vos observations sur l'architecture de votre réseau. Appuyez-vous sur les adresses IP que vous venez de noter (architecture logique) ainsi que sur l'[architecture physique](#fig-connexion-internet)).
+
 Appelez votre chargé de TP pour lui montrer la configuration IP de vos PC. Montrez également qu'ils peuvent se pinger.
