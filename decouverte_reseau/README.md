@@ -136,3 +136,9 @@ Le rôle d'un serveur DHCP, lorsqu'il reçoit la requête d'un PC, est de :
 
 - Lui attribuer une adresse IP disponible
 - Lui indiquer l'adresse de la passerelle par défaut et du serveur DNS
+
+<a name="fig-connexion-internet"></a>
+
+<p align="center">
+	<img src="images/dhcp-reseau-iut.png" width="75%">
+</p>
