@@ -1,6 +1,6 @@
 # Découverte de Windows 10
 
-L'objectif de ce TP est d'apprendre à gérer un PC sous ``Windows 10`` : vérifier l'accès à internet, administrer les utilisateurs et gérer les partages de fichiers. S'il vous reste du temps, vous découvrirez les rudiments du langage ``PowerShell``. 
+L'objectif de ce TP est d'apprendre à gérer un PC sous ``Windows 10`` : vérifier la configuration réseau, administrer le système localement ou à distance, et enfin gérer différents types de partages de fichiers. S'il vous reste du temps, vous découvrirez les rudiments du langage ``PowerShell``. 
 
 > :warning: A partir de cette séance de TP, vous allez travailler en binôme. Vous ne rendrez qu’un CR par table. Il doit être déposé sur Eprel au format PDF. Il est impératif de déposer votre CR à l’heure, c’est à dire avant la fin du TP.
 
