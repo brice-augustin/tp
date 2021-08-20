@@ -47,7 +47,7 @@ Sur une feuille A4, dessinez un schéma de votre maquette en faisant apparaitre 
 - Le câblage interconnectant ces ordinateurs
 - L'OS utilisé sur chaque PC et VM
 
-# Configuration réseau
+# Configuration IP et système
 
 Ouvrez un navigateur Web sur les trois PC et vérifiez que vous avez accès à internet. 
 
@@ -64,6 +64,8 @@ PC | Nom de la carte | Adresse IP
 ``PC2`` |  |
 ``PC3`` |  |
 ``VM1`` |  |
+
+Enfin, [renommez](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#renommer-un-pc) vos trois ordinateurs conformément au [cahier des charges](#fig-contexte). 
 
 # Partage de fichiers
 

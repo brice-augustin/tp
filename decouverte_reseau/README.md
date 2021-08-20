@@ -127,3 +127,12 @@ Enfin, vérifiez que vous pouvez [lancer un ping](https://doc2-iutrt.readthedocs
 Résumez en 4-6 lignes vos observations sur l'architecture de votre réseau. Appuyez-vous sur les adresses IP que vous venez de noter (architecture logique) ainsi que sur l'[architecture physique](#fig-connexion-internet)).
 
 Appelez votre chargé de TP pour lui montrer la configuration IP de vos PC. Montrez également qu'ils peuvent se pinger.
+
+## Configuration dynamique ou statique
+
+Comment vos PC ont-ils obtenu ces paramètres de configuration (adresse IP, passerelle et DNS) ? Ils les ont tout simplement demandés au serveur DHCP de l'IUT, représenté sur la figure suivante.
+
+Le rôle d'un serveur DHCP, lorsqu'il reçoit la requête d'un PC, est de :
+
+- Lui attribuer une adresse IP disponible
+- Lui indiquer l'adresse de la passerelle par défaut et du serveur DNS
