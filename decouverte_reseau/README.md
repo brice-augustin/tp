@@ -194,5 +194,5 @@ Tentez une [résolution du nom](https://doc2-iutrt.readthedocs.io/en/latest/wind
 <a name="fig-perdu-com"></a>
 
 <p align="center">
-	<img src="images/perdu-com.png" width="60%">
+	<img src="images/perdu-com.png" width="40%">
 </p>
