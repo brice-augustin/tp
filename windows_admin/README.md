@@ -91,16 +91,6 @@ Pour comprendre le fonctionnement d'un dossier partagé, intéressons-nous au pa
 
 Voyons maintenant comment configurer cela. Dans un premier temps, vous allez configurer le dossier ``Cuisine``. Vous vous occuperez du dossier ``Mexique`` un peu plus tard.
 
-## Synthèse 1
-
-<p align="center">
-	<img src="images/penseur.jpg" width=150>
-</p>
-
-Résumez en 4-6 lignes ce que vous avez fait depuis le début de la séance. 
-
-Appelez votre chargé de TP pour lui montrer que vos ordinateurs ont accès à internet. Expliquez-lui également le principe d'un dossier partagé.  
-
 ## Activation du partage de fichiers
 
 Par défaut, le partage de fichiers est *désactivé* sur tous les postes de travail. 
@@ -137,6 +127,16 @@ Vous devez donc [créer cet utilisateur](https://doc2-iutrt.readthedocs.io/en/la
 
 Sur PC1, réaffichez ensuite le dossier partagé, et vérifiez que, cette fois, vous pouvez afficher le contenu des fichiers qu'il contient. 
 
+## Synthèse 1
+
+<p align="center">
+	<img src="images/penseur.jpg" width=150>
+</p>
+
+Résumez en 4-6 lignes ce que vous avez fait depuis le début de la séance. 
+
+Appelez votre chargé de TP pour lui montrer votre maquette. Expliquez-lui également le principe d'un dossier partagé.  
+
 ## Autres dossiers partagés
 
 Complétez votre maquette en accord avec la [figure](#fig-contexte) : le dossier partagé ``Mexique`` doit être hébergé sur le PC de ``Gus`` et son contenu peut être affiché (et modifié !) par ``White``. De plus, ``Gus`` doit avoir accès en lecture-écriture au dossier ``Cuisine``.
@@ -154,20 +154,6 @@ Test | Succès ?
 ``White`` modifie ``Mexique`` |
 ``Gus`` affiche ``Cuisine`` |
 ``Gus`` modifie ``Cuisine`` |
-
-## Synthèse 2
-
-<p align="center">
-	<img src="images/penseur.jpg" width=150>
-</p>
-
-Résumez en 4-6 lignes ce que vous avez fait depuis la dernière synthèse. 
-
-Appelez votre chargé de TP pour lui montrer que :
-
-- ``Pinkman`` peut lire les fichiers dans ``Cuisine``, mais pas dans ``Mexique``
-- ``White`` peut écrire dans ``Mexique``
-- ``Gus`` peut écrire dans ``Cuisine``
 
 ## Lecteur réseau
 
@@ -195,7 +181,44 @@ Sur PC1, ouvrez une session en tant que ``Pinkman`` (si ce n'est pas déjà le c
 
 *L'inconvénient majeur du stockage cloud est qu'il ne fonctionne plus sans connexion à internet ...*
 
-> :warning: A la fin du TP, n'oubliez pas de vous [déconnecter de OneDrive](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#se-deconnecter-de-onedrive)pour empêcher quiconque d’accéder à vos fichiers depuis ce PC. 
+> :warning: A la fin du TP, n'oubliez pas de vous [déconnecter de OneDrive](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#se-deconnecter-de-onedrive) pour empêcher quiconque d’accéder à vos fichiers depuis ce PC. 
+
+## Synthèse 2
+
+<p align="center">
+	<img src="images/penseur.jpg" width=150>
+</p>
+
+Résumez en 4-6 lignes ce que vous avez fait depuis la dernière synthèse. 
+
+Appelez votre chargé de TP pour lui montrer que :
+
+- ``Pinkman`` peut lire les fichiers dans ``Cuisine``, mais pas dans ``Mexique`` et qu'il dispose d'un stockage cloud
+- ``White`` peut écrire dans ``Mexique``
+- ``Gus`` peut écrire dans ``Cuisine``
+
+# Un peu d'administration système
+
+## Raccourcis clavier
+
+A la longue, vous constaterez que la souris est souvent peu efficace pour réaliser certaines tâches répétitives. Au contraire, il existe de nombreux raccourcis clavier pour réaliser la plupart des actions habituelles : [gestion de texte et de fichiers](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#raccourcis-clavier-de-gestion-des-objets-texte-et-fichiers), [gestion des fenêtres](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#raccourcis-clavier-de-gestion-des-fenetres). 
+
+Vous avez aussi la possibilité de créer vos [raccourcis personnels](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#creer-un-raccourci-personnel-pour-lancer-firefox) pour lancer une application.
+
+Sans utiliser la souris une seule fois, vérifiez que vous pouvez :
+
+- Ouvrir le ``bloc-note`` et agrandir la fenêtre sur le côté gauche de l'écran
+- Y écrire le message ``Bonjour``,
+- Dupliquer 20 fois ce texte, puis 
+- Sauvegarder le texte dans un fichier nommé ``bonjour.txt`` dans le dossier ``Documents``
+- Fermer le ``bloc-note``
+- Supprimer définitivement le fichier
+
+## Contrôle à distance
+
+Depuis PC1, [connectez-vous en SSH](https://doc2-iutrt.readthedocs.io/en/latest/linux.html#se-connecter-en-ssh-sur-le-pc-203-0-113-10-avec-le-compte-otabenga) sur la VM1 et installez un serveur Web dessus, avec une page Web personnalisée. 
+
+Vérifiez que vous pouvez afficher cette page Web depuis n'importe quel PC de votre réseau. 
 
 ## Synthèse 3
 
@@ -203,6 +226,10 @@ Sur PC1, ouvrez une session en tant que ``Pinkman`` (si ce n'est pas déjà le c
 	<img src="images/penseur.jpg" width=150>
 </p>
 
-Résumez en 4-6 lignes ce que vous avez fait depuis le début du TP. 
+Résumez en 4-6 lignes ce que vous avez fait depuis la dernière synthèse. 
 
-Appelez votre chargé de TP pour lui montrer tous les espaces de stockage que vous avez créés pour ``Pinkman``. 
+Appelez votre chargé de TP pour lui montrer que vous pouvez :
+
+- Vous passer de la souris
+- Administrer un PC ``Linux`` depuis un PC ``Windows``
+- Créer un petit site Web et naviguer dessus
