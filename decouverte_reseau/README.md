@@ -1,7 +1,5 @@
 # Découverte du réseau
 
-## Introduction
-
 Ce TP consiste en une introduction à l'administration réseau. Vous découvrirez le rôle des trois [adresses IP](https://fr.wikipedia.org/wiki/Adresse_IP) que tout ordinateur doit connaitre pour accéder à internet : la sienne, bien sûr, mais aussi celle de sa [passerelle par défaut](https://fr.wikipedia.org/wiki/Routeur), et enfin celle de son [serveur DNS](https://fr.wikipedia.org/wiki/Domain_Name_System). Vous apprendrez que ces paramètres peuvent être configurés manuellement ou automatiquement. 
 Enfin, vous terminerez avec quelques notions d'administration système sous Windows 10. 
 
@@ -45,7 +43,7 @@ Dessinez un schéma de votre maquette en faisant apparaitre :
 Faites valider votre préparation par votre chargé de TP.
 
 
-## Check-list pour se connecter à internet
+# Check-list pour se connecter à internet
 
 Ouvrez un navigateur Web sur PC1 et PC3 et vérifiez que vous avez accès à internet (affichez la page de ``www.perdu.com``). 
 
@@ -64,7 +62,7 @@ Dans cette partie, vous allez inspecter tous les éléments impliqués dans une 
 	<img src="images/connexion-internet.png" width="75%">
 </p>
 
-### Adresse IP et masque
+## Adresse IP et masque
 
 [Affichez les cartes réseau](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#afficher-les-cartes-reseau) de PC1 puis [déterminez son adresse IP](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#determiner-l-adresse-ip-de-la-carte-reseau-ethernet-4). Faites de même sur PC3.
 
@@ -82,7 +80,7 @@ PC | Nom de la carte | Adresse IP | Masque
 Depuis PC1, [lancez un ping](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#lancer-un-ping-vers-l-adresse-ip-8-8-8-8) vers PC3, puis vers les PC de vos voisins pour confirmer qu'ils peuvent communiquer ensemble. 
 Enfin, [lancez un ping](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#lancer-un-ping-vers-l-adresse-ip-8-8-8-8) vers une adresse IP non attribuée (*PC fantôme*) pour observer un échec de ping. 
 
-### Passerelle par défaut
+## Passerelle par défaut
 
 [Affichez l'adresse de la passerelle par défaut](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#afficher-l-adresse-de-la-passerelle-par-defaut) de PC1 et PC3. Échangez cette information avec vos voisins et [lancez un ping](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#lancer-un-ping-vers-l-adresse-ip-8-8-8-8) vers cette adresse. 
 
@@ -97,7 +95,7 @@ Passerelle de PC3 *voisin* |
 
 > :information_source: Comment un PC utilise-t-il la passerelle pour communiquer avec l'extérieur ? C'est une des nombreuses questions auxquelles nous répondrons ... plus tard !
 
-### Serveur DNS
+## Serveur DNS
 
 [Affichez l'adresse IP du serveur DNS](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#afficher-l-adresse-du-serveur-dns) de vos deux PC et [lancez un ping](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#lancer-un-ping-vers-l-adresse-ip-8-8-8-8) vers cette adresse. 
 
@@ -128,9 +126,9 @@ Résumez en 4-6 lignes vos observations sur l'architecture de votre réseau. App
 
 Appelez votre chargé de TP pour lui montrer la configuration IP de vos PC. Montrez également qu'ils peuvent se pinger.
 
-## Configuration dynamique ou statique
+# Configuration dynamique ou statique
 
-Comment vos PC ont-ils obtenu ces paramètres de configuration (adresse IP, passerelle et DNS) ? Ils les ont tout simplement demandés au serveur DHCP de l'IUT, représenté sur la figure suivante.
+Comment vos PC ont-ils obtenu ces paramètres de configuration (adresse IP, passerelle et DNS) ? Ils les ont tout simplement demandés au serveur [DHCP](https://fr.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol) de l'IUT, représenté sur la figure suivante.
 
 Le rôle d'un serveur DHCP, lorsqu'il reçoit la requête d'un PC, est de :
 
@@ -141,4 +139,60 @@ Le rôle d'un serveur DHCP, lorsqu'il reçoit la requête d'un PC, est de :
 
 <p align="center">
 	<img src="images/dhcp-reseau-iut.png" width="60%">
+</p>
+
+A chaque démarrage, vos PC ont en effet pour instruction d'interroger le serveur DHCP de l'IUT : ils ont une configuration IP *dynamique*. [Affichez la configuration de la carte réseau](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#afficher-la-configuration-de-la-carte-ethernet) et vérifiez qu'elle est bien configurée en [adressage dynamique](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#configurer-la-carte-ethernet-4-en-adressage-dynamique-persistant).
+
+Voyons maintenant comment se comportent vos ordinateurs lorsqu'ils sont privés de ces informations. 
+
+## Pas de configuration
+
+Dans cette partie, vous allez *supprimer* la configuration dynamique sur PC1 et PC3, et observer le résultat. 
+
+Sur PC1, commencez par [effacer sa configuration IP](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#effacer-la-configuration-ip), puis essayez de vous connecter à internet et de [lancer un ping](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#lancer-un-ping-vers-l-adresse-ip-8-8-8-8) vers PC3. 
+[Affichez les détails de la connexion réseau](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#fig-details-connexion-reseau) pour confirmer que PC1 n'a plus ni adresse IP, ni passerelle par défaut, ni serveur DNS. 
+
+A présent, [effacez la configuration IP](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#effacer-la-configuration-ip) de PC3. 
+
+> :sweat_smile: Vos deux PC se retrouvent maintenant sans aucun accès internet !
+
+## Configuration dynamique
+
+Après avoir médité quelques minutes sur l'utilité d'un PC sans accès internet, configurez de nouveau PC1 en [adressage dynamique persistant](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#configurer-la-carte-ethernet-4-en-adressage-dynamique-persistant) et assurez-vous qu'il peut à nouveau surfer sur la toile. 
+
+*Ne touchez pas à PC3 pour le moment : vous allez découvrir une seconde méthode de configuration dans la partie suivante.*
+
+## Configuration statique
+
+En effet, il est possible d'attribuer *manuellement* une adresse IP à une carte réseau. Dans ce cas, on parle de configuration *statique*, par opposition une configuration *dynamique* obtenue via un serveur DHCP. 
+
+Le but de cette partie est d'obtenir à nouveau un accès à internet sur PC3, mais cette fois en configurant vous-même tous les paramètres. 
+
+Commencez par configurer la carte réseau de PC3 en [adressage statique](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#configurer-la-carte-ethernet-4-en-adressage-statique). Attribuez-lui l'adresse ``172.16.110.$num/24``, ou ``$num`` représente votre numéro de table auquel on a ajouté 10. N'indiquez pas l'adresse de la passerelle ni celle du serveur DNS. *Vous les configurerez dans quelques minutes.*
+
+Vérifiez que vous pouvez dès maintenant [lancer un ping](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#lancer-un-ping-vers-l-adresse-ip-8-8-8-8) vers PC1. 
+En revanche, impossible de lancer un ping en dehors de votre réseau IP. Par exemple, lancez un ping vers l'adresse IP ``8.8.8.8``. Vous observez le message d'erreur suivant :
+
+```
+	PING : échec de la transmission. Défaillance générale.
+```
+
+Pour sortir de votre propre réseau, vous devez à présent [configurer la passerelle par défaut](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#configurer-la-carte-ethernet-4-en-adressage-statique). Bien sûr, il s'agit de la passerelle par défaut de la salle de TP, que vous avez notée un peu plus tôt ...
+
+Connaissant sa passerelle par défaut, PC3 est maintenant capable de lancer un ping en dehors de son réseau IP. Vérifiez-le en lançant un ping vers ``8.8.8.8``.
+
+Par contre, la résolution des noms de domaine ne fonctionne pas encore. Si vous essayez de [résoudre le nom de domaine](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#resoudre-le-nom-de-domaine-www-perdu-com) ``www.perdu.com``, vous observez le message suivant :
+
+```
+	*** [...] www.perdu.com : No response from server
+```
+
+Il vous reste donc à [configurer le serveur DNS](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#configurer-la-carte-ethernet-4-en-adressage-statique), et vous retrouverez un accès à internet sur PC3. *Rappelez-vous que vous avez noté cette adresse un peu plus tôt ...*
+
+Tentez une [résolution du nom](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#resoudre-le-nom-de-domaine-www-perdu-com) puis connectez-vous à ``www.perdu.com`` avec un navigateur Web. *Si la page suivante s'affiche, c'est gagné !*
+
+<a name="fig-perdu-com"></a>
+
+<p align="center">
+	<img src="images/perdu-com.png" width="60%">
 </p>
