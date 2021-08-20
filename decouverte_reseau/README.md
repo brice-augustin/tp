@@ -140,5 +140,5 @@ Le rôle d'un serveur DHCP, lorsqu'il reçoit la requête d'un PC, est de :
 <a name="fig-connexion-internet"></a>
 
 <p align="center">
-	<img src="images/dhcp-reseau-iut.png" width="75%">
+	<img src="images/dhcp-reseau-iut.png" width="60%">
 </p>
