@@ -196,3 +196,48 @@ Tentez une [résolution du nom](https://doc2-iutrt.readthedocs.io/en/latest/wind
 <p align="center">
 	<img src="images/perdu-com.png" width="40%">
 </p>
+
+> :bulb: L'accès à internet peut donc s'obtenir aussi bien avec une configuration dynamique que statique, à condition que les paramètres IP soient configurés correctement : adresse, passerelle et DNS. 
+
+## Synthèse 2
+
+<p align="center">
+	<img src="images/penseur.jpg" width=150>
+</p>
+
+Résumez en 4-6 lignes ce que vous avez fait depuis la dernière synthèse. 
+
+Appelez votre chargé de TP pour lui montrer la configuration IP de vos PC. Montrez également qu'ils peuvent se pinger.
+
+# Un nouveau défi
+
+Dans cette partie, vous allez collaborer avec vos voisins installés sur le même 'îlot' que vous (votre table, et celle juste en face). 
+
+## Maquette collaborative
+
+Utilisez toutes vos connaissances en câblage, virtualisation, administration système et administration réseau pour réaliser la maquette de la figure suivante. 
+
+<a name="fig-defi-suite"></a>
+
+<p align="center">
+	<img src="images/defi-suite.png" width="75%">
+</p>
+
+Vous devez porter une attention toute particulière aux détails suivants :
+
+- Le câblage
+- L'OS, représenté par une icône sous chaque ordinateur
+- Le rôle (client ou serveur), indiqué par un pictogramme spécifique
+- Le nom de l'utilisateur et de l'ordinateur. Par exemple, l'ordinateur en haut à gauche appartient à l'utilisateur ``H``, et il se nomme ``PC-DE-H``
+- L'adressage IP, indiqué à côté de chaque carte réseau. Le mot-clé ``dhcp`` indique un adressage dynamique. Les lettres ``x``, ``y`` et ``z`` représentent votre numéro de table auquel on a ajouté, respectivement 10, 22 et 34. 
+- Les dossiers partagés. La gestion de leurs droits d'accès et la création des lecteurs réseau sont laissées à votre discrétion
+
+## Synthèse 3
+
+<p align="center">
+	<img src="images/penseur.jpg" width=150>
+</p>
+
+Résumez en 4-6 lignes maximum les grandes étapes de réalisation de votre maquette collaborative. 
+
+Appelez votre chargé de TP pour une petite démo de vos compétences techniques. 
