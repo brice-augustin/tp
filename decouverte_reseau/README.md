@@ -215,7 +215,7 @@ Dans cette partie, vous allez collaborer avec vos voisins installés sur le mêm
 
 ## Maquette collaborative
 
-Utilisez toutes vos connaissances en câblage, virtualisation, administration système et administration réseau pour réaliser la maquette de la figure suivante. 
+Utilisez toutes vos connaissances en câblage, virtualisation, administration système et administration réseau pour réaliser la maquette suivante. 
 
 <a name="fig-defi-suite"></a>
 
