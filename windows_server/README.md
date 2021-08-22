@@ -51,7 +51,7 @@ La figure suivante illustre la maquette de TP, constituée de quatre ordinateurs
 
 > :pencil2: Notez bien que ces trois ordinateurs étant reliés par le switch de votre table, ils forment un réseau local (LAN) qui est totalement isolé du réseau de l'IUT. 
 
-•	PC2 (sous ``Windows 10``) est le seul ordinateur à être relié au réseau de l'IUT. 
+- PC2 (sous ``Windows 10``) est le seul ordinateur à être relié au réseau de l'IUT. 
 Pour le moment, vous allez l'utiliser pour visualiser le sujet de TP et rédiger votre CR. *Vous le transformerez en passerelle par défaut dans la seconde partie du TP.* 
 
 <a name="fig-maquette"></a>
