@@ -1,4 +1,4 @@
-# Travaux Pratiques des modules Réseaux
+# Travaux Pratiques des ressources Réseaux
 
 TP1 : [Découverte de la salle de TP Réseaux](tp1/README.md)
 
