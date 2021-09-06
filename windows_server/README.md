@@ -64,3 +64,6 @@ Pour le moment, vous allez l'utiliser pour visualiser le sujet de TP et rédiger
 
 Ouvrez une session sur les quatre ordinateurs, avec les [identifiants de l'IUT](https://doc2-iutrt.readthedocs.io/en/latest/divers.html#identifiants-de-l-iut). 
 
+# Préparation de la maquette
+
+Vérifiez que tous les ordinateurs sont configurés en [adressage dynamique](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#configurer-la-carte-ethernet-4-en-adressage-dynamique-persistant), y compris PC1 sous Windows Server. Affichez leur configuration IP* et relevez leur adresse IP. 

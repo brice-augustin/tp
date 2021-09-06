@@ -10,4 +10,4 @@ TP4 : Découverte de Windows Server (sur Eprel)
 
 TP5 : Découverte de Linux (sur Eprel)
 
-TP6 : Services réseaux sous Linux (sur Eprel)
+TP6 : Services réseau sous Linux (sur Eprel)
