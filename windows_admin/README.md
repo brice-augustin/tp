@@ -30,7 +30,7 @@ Dans le cadre de leur travail, ils ont régulièrement besoin d'échanger des fi
 La figure suivante illustre la maquette de TP :
 
 - Les trois PC, sous ``Windows 10``, jouent le rôle des ordinateurs des trois employés de l'entreprise
-- ``PC3`` héberge également une VM ``Debian`` qui joue le rôle du serveur FTP
+- ``PC3`` (utilisez le PC de droite) héberge également une VM ``Debian`` qui joue le rôle du serveur FTP
 
 <p align="center">
 	<img src="images/maquette.png" width="75%">
