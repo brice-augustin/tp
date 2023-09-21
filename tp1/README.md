@@ -123,8 +123,8 @@ Nom | Type | Adresse IP
 ``PC Exemple`` | Physique | ``172.16.110.42/24``
 ``Hôte - Windows 10`` | Physique |
 ``VM1 - Windows Server 2016`` | Virtuel |
-``VM2 - Debian Stretch (#1)`` | Virtuel |
-``VM3 - Debian Stretch (#2)`` | Virtuel |
+``VM2 - Debian Bookworm (#1)`` | Virtuel |
+``VM3 - Debian Bookworm (#2)`` | Virtuel |
 
 Vous remarquerez que les quatre adresses IP commencent toutes par ``172.16.110``. Par convention, à l'IUT le troisième nombre (ici ``110``) correspond au numéro de la salle de TP. Le quatrième identifie chaque équipement de manière unique, dans la salle. 
 
@@ -132,7 +132,7 @@ Vous remarquerez que les quatre adresses IP commencent toutes par ``172.16.110``
 
 Pour vérifier que deux ordinateurs A et B peuvent communiquer, on utilise la méthode du ping. Depuis A, on envoie une requête vers B. Si ce dernier répond, c'est que la communication entre A et B est possible. 
 
-Commencez par [lancer un ping](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#lancer-un-ping-vers-l-adresse-ip-8-8-8-8) de ``Windows Server 2016`` (VM1) vers ``Debian Stretch`` (VM2), et [inversement](https://doc2-iutrt.readthedocs.io/en/latest/linux.html#lancer-un-ping-vers-l-adresse-ip-8-8-8-8).
+Commencez par [lancer un ping](https://doc2-iutrt.readthedocs.io/en/latest/windows.html#lancer-un-ping-vers-l-adresse-ip-8-8-8-8) de ``Windows Server 2016`` (VM1) vers ``Debian Bookworm`` (VM2), et [inversement](https://doc2-iutrt.readthedocs.io/en/latest/linux.html#lancer-un-ping-vers-l-adresse-ip-8-8-8-8).
 
 Notez le résultat des deux pings dans un tableau :
 
